@@ -9,7 +9,7 @@ icon: snap/gui/icon.png
 
 
 apps:
-   winpeer:
+   flutter-share-screen:
      command: winpeer
      extensions: [flutter-master]
      plugs:
@@ -17,7 +17,7 @@ apps:
        - desktop
 
 parts:
-  winpeer:
+  flutter-share-screen:
     source: .
     plugin: flutter
     flutter-target: lib/main.dart # The main entry-point file of the application
