@@ -32,10 +32,12 @@ class Socket extends StreamEventEmitter {
     _id = id;
 
     final wsUrl = "$_baseUrl&id=$id&token=$token&version=1";
+    print(wsUrl);
 
     if (!_disconnected) {
       return;
     }
+    print("uri: " + Uri.parse(wsUrl).toString());
 
     _socket = WebSocketChannel.connect(Uri.parse(wsUrl));
     _disconnected = false;

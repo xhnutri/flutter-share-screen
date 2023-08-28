@@ -106,6 +106,7 @@ class Peer extends StreamEventEmitter {
   }
 
   void _initialize(String id) {
+    print("dhoihfodihodfp");
     _id = id;
     _socket.start(id, _options.token ?? "ssdsew");
   }

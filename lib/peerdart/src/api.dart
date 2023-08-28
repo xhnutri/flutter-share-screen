@@ -8,6 +8,9 @@ class API {
   late PeerOptions _options;
 
   API({PeerOptions? options}) {
+    print("28917370923809");
+    print(options);
+    print("28917370923809");
     if (options != null) {
       _options = options;
     }
@@ -15,7 +18,6 @@ class API {
 
   Future<Response> _buildRequest(String method) async {
     final url = _buildUrl(method);
-
     return await http.get(url);
   }
 
